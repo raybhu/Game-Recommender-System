@@ -1,0 +1,12 @@
+2019-02-16 15:59:05,131 - instagram_scraper.app - ERROR - Login failed for Ra1zo.cn
+2019-02-16 15:59:05,132 - instagram_scraper.app - ERROR - {"message": "", "two_factor_required": true, "two_factor_info": {"username": "ra1zo.cn", "sms_two_factor_on": false, "totp_two_factor_on": true, "obfuscated_phone_number": "9334", "two_factor_identifier": "nHuQo4l17j", "show_messenger_code_option": false, "show_new_login_screen": true, "phone_verification_settings": {"max_sms_count": 2, "resend_sms_delay_sec": 60, "robocall_count_down_time_sec": 30, "robocall_after_max_sms": true}}, "phone_verification_settings": {"max_sms_count": 2, "resend_sms_delay_sec": 60, "robocall_count_down_time_sec": 30, "robocall_after_max_sms": true}, "status": "fail"}
+2019-02-16 15:59:06,579 - instagram_scraper.app - WARNING - Failed to get high resolution profile picture for hkbaptistu
+2019-02-16 15:59:12,073 - instagram_scraper.app - WARNING - No Content-Length in response, the file 51211764_288033315202820_8813036144391152250_n.jpg may be partially downloaded
+2019-02-16 15:59:12,147 - instagram_scraper.app - WARNING - No Content-Length in response, the file 51202489_930237024034352_4646876062040721769_n.jpg may be partially downloaded
+2019-02-16 15:59:12,148 - instagram_scraper.app - WARNING - No Content-Length in response, the file 51363283_470085510194018_1985135258938177498_n.jpg may be partially downloaded
+2019-02-16 15:59:12,789 - instagram_scraper.app - WARNING - No Content-Length in response, the file 50981015_387665852043044_5839140024980042675_n.jpg may be partially downloaded
+2019-02-16 15:59:12,954 - instagram_scraper.app - WARNING - No Content-Length in response, the file 50759431_741465872891511_9210570454911304860_n.jpg may be partially downloaded
+2019-02-16 15:59:13,222 - instagram_scraper.app - WARNING - No Content-Length in response, the file 50626398_961034374285457_6109694868821228499_n.jpg may be partially downloaded
+2019-02-16 15:59:13,500 - instagram_scraper.app - WARNING - No Content-Length in response, the file 51482119_609753736139983_2036176384426718645_n.jpg may be partially downloaded
+2019-02-16 15:59:13,785 - instagram_scraper.app - WARNING - No Content-Length in response, the file 49698585_116574432748908_2268791113697050271_n.jpg may be partially downloaded
+2019-02-16 15:59:13,855 - instagram_scraper.app - WARNING - No Content-Length in response, the file 51728733_1998044120496775_1543675641149844660_n.jpg may be partially downloaded

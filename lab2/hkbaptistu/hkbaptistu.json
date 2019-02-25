@@ -1,0 +1,914 @@
+[
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 718,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/4c5c543e8cb145a3347727599d3d08a3/5D055DCA/t51.2885-15/e35/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 75
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Mr Jonathan Williams, Consul (Head of Political and Communications) from the British Consulate-General in Hong Kong, is another great friend of HKBU, and he joined us yesterday to celebrate Valentine’s Day.\n.\nEvery year HKBU welcomes over 200 exchange students from all over the world to study here, and British students form one of the largest groups. Mr Williams joined us for a casual and relaxed gathering with exchange students from the UK, and HKBU students who went on exchange to the UK. Big love to the UK!\n🇬🇧 #hkbu #seehkbu #buhk #hongkongbaptistuniversity #hkbaptistu #hkbuintloffice #valentinesday2019 #UKinHK #ukconsulgeneral #uk #britain #exchange #浸大 #浸會大學 #香港浸會大學 #英國 #領事 #國際事務處 #交換生 #情人節 #英國駐香港總領事館"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 1
+        },
+        "gating_info": null,
+        "id": "1979550020743114018",
+        "is_video": false,
+        "media_preview": "ACobfFhlye3WnPGCOeR1wO3p9cj/AOtVK/O1EX+9z6eg/GmxSs+Ap58tl56fL0J9wOlK2ly72ehckZOCpIIHuAffnHHbipbeVXKtnoQW9jVIxsEOTkKgH6+/1qK3laI5PKkH+Zx/npzVJaadxNu+r6fqdIbqI9W/MH/CmG6h/vfof8KyrW4EnHqPfGR1H16dKuYouKxk3WZtg4XAPJOOgBx9TjiorI7m3HAVAR7ndn+VVp3LDB6A0+2kZcKDgE81K21H1LNxO6sU42kY+vPX9MYqsk+5SGHQHHsMYA9+TUlwcsh77j/6FUEQBcg9Mnj6ZxTTE1qWtPILBcYKgnIJ56dulbOax9MAMhz6H+lbewUAf//Z",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "Bt4xkF5gq0i",
+        "tags": [
+            "hkbuintloffice",
+            "valentinesday2019",
+            "exchange",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "hkbu",
+            "交換生",
+            "浸會大學",
+            "情人節",
+            "領事",
+            "英國",
+            "香港浸會大學",
+            "ukconsulgeneral",
+            "uk",
+            "國際事務處",
+            "britain",
+            "buhk",
+            "浸大",
+            "seehkbu",
+            "英國駐香港總領事館",
+            "UKinHK"
+        ],
+        "taken_at_timestamp": 1550200773,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/d9a868f9ba0be777c209703b39abe28a/5CFB56CB/t51.2885-15/e35/c181.0.718.718/s150x150/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2.c"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/86befaa3a75bece1d10236c1d47c88e0/5CE4CD81/t51.2885-15/e35/c181.0.718.718/s240x240/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2.c"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/8511487daee672a504b08362fb27b824/5CF3D43B/t51.2885-15/e35/c181.0.718.718/s320x320/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2.c"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/d5e3578139fa5cc36296920df8a2c227/5CE98361/t51.2885-15/e35/c181.0.718.718/s480x480/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2.c"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/1e6c1550590c0d476e1919735ae0de50/5CDEB9C1/t51.2885-15/sh0.08/e35/c181.0.718.718/s640x640/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2.c"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/1e6c1550590c0d476e1919735ae0de50/5CDEB9C1/t51.2885-15/sh0.08/e35/c181.0.718.718/s640x640/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2.c",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/4c5c543e8cb145a3347727599d3d08a3/5D055DCA/t51.2885-15/e35/51211764_288033315202820_8813036144391152250_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3OTU1MDAyMDc0MzExNDAxOA%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphSidecar",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/584a09a372824ecd65db7b1bea86c0eb/5CE8B769/t51.2885-15/e35/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 226
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Happy Valentine’s Day! An annual arts fair “Lunchtime I'm In Love” was held on campus today. Teaching staff and students, with or without lovers, had a great time there!\n💓 \n@hkbulive #hkbu #seehkbu #hongkongbaptistuniversity #hkbaptistu #buhk #hkbulive #valentinesday2019 #lunchtime #busking #love #aab #biglove #selfie #浸大 #浸會大學 #香港浸會大學 #藉著午餐說愛你 #情人節 #出pool #有情人 #大愛 #藝術節 #聯福道 #邱比特 #周耀輝 #草地 #開心情人節 #2月14曲折離奇"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 1
+        },
+        "gating_info": null,
+        "id": "1979035451163571668",
+        "is_video": false,
+        "media_preview": null,
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "Bt28kHognXU",
+        "tags": [
+            "2月14曲折離奇",
+            "aab",
+            "valentinesday2019",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "藝術節",
+            "藉著午餐說愛你",
+            "busking",
+            "情人節",
+            "hkbu",
+            "浸會大學",
+            "邱比特",
+            "hkbulive",
+            "香港浸會大學",
+            "開心情人節",
+            "buhk",
+            "love",
+            "聯福道",
+            "有情人",
+            "selfie",
+            "浸大",
+            "周耀輝",
+            "biglove",
+            "lunchtime",
+            "大愛",
+            "出pool",
+            "seehkbu",
+            "草地"
+        ],
+        "taken_at_timestamp": 1550139431,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/3527969f2f54f26ee8e6df24c3c4d2b5/5CEFA82B/t51.2885-15/e35/s150x150/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/2f1711fd5e35173a6837f0a5cc760ede/5CF07B61/t51.2885-15/e35/s240x240/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/594ecad32a0e4dae69a8cefe36253fa0/5CF672DB/t51.2885-15/e35/s320x320/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/89c73de16fd4d5ae1306f985b4ce704a/5CDEE581/t51.2885-15/e35/s480x480/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/0618323b79dddad705d6452cf97ab23e/5CFCC18C/t51.2885-15/sh0.08/e35/s640x640/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/0618323b79dddad705d6452cf97ab23e/5CFCC18C/t51.2885-15/sh0.08/e35/s640x640/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/584a09a372824ecd65db7b1bea86c0eb/5CE8B769/t51.2885-15/e35/51363283_470085510194018_1985135258938177498_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3OTAzNTQ0NDc3MTMwNjU3OA%3D%3D.2",
+            "https://scontent-hkg3-1.cdninstagram.com/vp/e58703407d4b79686e7520b30fdec066/5CDF44EF/t51.2885-15/e35/51482119_609753736139983_2036176384426718645_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3OTAzNTQ0NDc2MzEzNDU1Nw%3D%3D.2",
+            "https://scontent-hkg3-1.cdninstagram.com/vp/36b2a2e699f7ff9a458013f82ea5b7f1/5CFCD129/t51.2885-15/e35/51728733_1998044120496775_1543675641149844660_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3OTAzNTQ0NDc3OTc2MDEzNw%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/f3503176517dcf58470068ff3a7249cf/5CEBAA73/t51.2885-15/e35/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 212
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "“Still Human”, the debut film from director Oliver Chan Siu-kuen – an alumna from the Academy of Film – has been nominated in eight award categories at the 38th Hong Kong Film Awards, including Best Film, Best Director, Best Screenplay, Best Actor, Best Actress, Best Supporting Actor, Best New Performer and Best New Director. Congratulations!\n🎬\n@stillhumanthemovie @joa.de.joaillerie @hkbucomm @af_hd_hkbu @hongkongfilmawards #hkbu #seehkbu #buhk #hongkongbaptistuniversity #hkbaptistu #hkbuaf #hkbuafhd #stillhuman #nomination #hkfilm #hkmovie #hkbucomm #academyoffilm #浸大 #浸會大學 #香港浸會大學 #淪落人 #陳小娟 #香港電影金像獎 #八項提名 #傳理學院 #電影學院 #香港電影"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 0
+        },
+        "gating_info": null,
+        "id": "1978113823424603638",
+        "is_video": false,
+        "media_preview": "ACoqsi3KFCQAThenfHr3P1A9OtSyWazHJz8vG7uf/rDpWPHcEjaSTu45Ppz9eO1aEEnOMMeeeeB3+6On9aSa2CxWeGSEZYYwcA8c9fTpx61PAzwjpkO2Fz27kmpHud6/MMRk7cdMDqG/lxyMVlC8LDYoBQHPPU49Owot1Q9tGdBG/mKGxjPUe44NPxWTa3ryBkbC7RnPTHPI/wDr1N9rX+8fyNaEGVEC2CRj39qtwgt8wbGegGOnr7n0qQW20ctwSDz0z27+/wCtNCFRvXG0DGB1GO2P61kl1NB/2ZZEKZ2n1Pf8eg/rzWXIFtmMed3HPGD75/LtxW3GS8eY/wAj06dfbj/9VYd4xWU9MkDkc8Y/n3qrdBN9R8EpUlsH5+3qD2q7v/2QP8/Sq1rEZhu7qe545+n0q59lf1H5n/CkwQX7jyTn2x9aqLLstvUcj6Ejg1pYDKQeRjvWLIf3B/D/ANCNNbA9yzbykROTkrtzj3qC8iwUbGNyjj3FSQ/6j6/4VPqHSL60yRdO4jP1/pV/dWdY8b/97/GtGoZotj//2Q==",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "BtzrAq6g2X2",
+        "tags": [
+            "八項提名",
+            "hkbuaf",
+            "hkbucomm",
+            "hkbuafhd",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "電影學院",
+            "hkbu",
+            "浸會大學",
+            "香港浸會大學",
+            "academyoffilm",
+            "香港電影金像獎",
+            "傳理學院",
+            "buhk",
+            "hkfilm",
+            "nomination",
+            "陳小娟",
+            "浸大",
+            "香港電影",
+            "hkmovie",
+            "seehkbu",
+            "stillhuman",
+            "淪落人"
+        ],
+        "taken_at_timestamp": 1550029565,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/79da75d2102b7d64270fa35031e965e3/5CE5AD31/t51.2885-15/e35/s150x150/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/6acdce5ed10c849bd13f81705a24dd7b/5D25DA7B/t51.2885-15/e35/s240x240/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/4f385a00bbddff38a69c6dd686346fa6/5D27F8C1/t51.2885-15/e35/s320x320/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/d2d8175e48f104bea55a1f9a48e2f7d1/5CEB319B/t51.2885-15/e35/s480x480/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/6d42eed369e2ab72eacca5f97e14b6b0/5D273996/t51.2885-15/sh0.08/e35/s640x640/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/6d42eed369e2ab72eacca5f97e14b6b0/5D273996/t51.2885-15/sh0.08/e35/s640x640/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/f3503176517dcf58470068ff3a7249cf/5CEBAA73/t51.2885-15/e35/50746298_387634015147505_4813861131294794828_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3ODExMzgyMzQyNDYwMzYzOA%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 720,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/cf91bbe4472a2c9aa769bf333b524faf/5CFD2316/t51.2885-15/e35/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 196
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Mr Kurt Tong, Consul General of the United States to Hong Kong and Macau, recently came to HKBU for Renri, the 7th day of the first month in the traditional Chinese calendar. Celebrating the special day with HKBU students, which according to Chinese customs marks the day human beings were created, Mr Tong also met with US students currently studying at HKBU, as well as HKBU students who recently returned from their exchange in the US.\n🇺🇸 @usainhkmacau #hkbu #seehkbu #buhk #hongkongbaptistuniversity #hkbaptistu #consulgeneral #usa #renri #cny2019 #exchange #usainhkmacau #springgathering #浸大 #浸會大學 #香港浸會大學 #美國領事館 #唐偉康 #人日 #農曆新年 #美國 #交換生 #人人生日 #美國駐港總領事 #國際事務處 #hkbuintloffice"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 2
+        },
+        "gating_info": null,
+        "id": "1977484350400338283",
+        "is_video": false,
+        "media_preview": "ACoc1oivKjDY70kVwgJUHmsoExSFYyQpPrnAH58HoDUb3JkUs38OOf8AZ9MD3OPr1rK3Y12ve5uLKFOaaZR94ZJ9APWsEXmDtyR9fbp7AfzqZZTINqlvmGRjuAe3cDnkc96SjLrawrr1NZpw+G9auKTgdOlYwuMDMilmwOpxyOO3H1Oe1N84dwxPrtPPvVxW92TLyRnlGVm55UgEZzz7Y/rTUSVoyh3bWIB/P/P4Cuj8tRyAKaQBTuN3e+py3ljHIYn2HBqe2ZkLDJUlSD6jpjr6jiukxUb28b/eANXKfN0JiuW9nuczvJIVSc9OOnXj+ua2WOCRsY4PX/JpW06FSCAfvZ6+tXhGPeoYz//Z",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "Btxb4oegZlr",
+        "tags": [
+            "springgathering",
+            "cny2019",
+            "hkbuintloffice",
+            "exchange",
+            "usa",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "hkbu",
+            "交換生",
+            "浸會大學",
+            "美國駐港總領事",
+            "人人生日",
+            "唐偉康",
+            "美國領事館",
+            "香港浸會大學",
+            "國際事務處",
+            "buhk",
+            "美國",
+            "浸大",
+            "consulgeneral",
+            "人日",
+            "seehkbu",
+            "renri",
+            "usainhkmacau",
+            "農曆新年"
+        ],
+        "taken_at_timestamp": 1549954526,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/868cccc0c089876937bd0a0846621fc7/5D0594C3/t51.2885-15/e35/c180.0.720.720/s150x150/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2.c"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/e261573c1cd6f5799a0a001b469a9f82/5CFB2889/t51.2885-15/e35/c180.0.720.720/s240x240/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2.c"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/68108d0f23646c7dac72e3d949fa6f97/5CF12F33/t51.2885-15/e35/c180.0.720.720/s320x320/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2.c"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/ed20aba5ffc42713cdfc3f5c00ad4a57/5CF87569/t51.2885-15/e35/c180.0.720.720/s480x480/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2.c"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/5418175e7d1a1ab250d40a4226eb0222/5CE190C9/t51.2885-15/sh0.08/e35/c180.0.720.720/s640x640/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2.c"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/5418175e7d1a1ab250d40a4226eb0222/5CE190C9/t51.2885-15/sh0.08/e35/c180.0.720.720/s640x640/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2.c",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/cf91bbe4472a2c9aa769bf333b524faf/5CFD2316/t51.2885-15/e35/51202489_930237024034352_4646876062040721769_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3NzQ4NDM1MDQwMDMzODI4Mw%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 750,
+            "width": 750
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/9ef2764594a9ac7bbf56718d76779cf5/5CF28770/t51.2885-15/e35/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 121
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "This is a new year. A new beginning. And things will change.\n.\n#hkbu #seehkbu #buhk #hongkongbaptistuniversity #hkbaptistu #hkbulibrary #yearofthepig #study #library #groupstudy #books #groupdiscussion #hkig #浸大 #浸會大學 #香港浸會大學 #圖書館 #新年 #小組 #溫習 #新一年 #豬年 #2019 #攝影 #學而時習之不亦樂乎 @hkbulibrary @hkbuadmissions"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 1
+        },
+        "gating_info": null,
+        "id": "1976870951232800575",
+        "is_video": false,
+        "media_preview": "ACoqthRSTOlsgZs/MeAo59z24FNnuUg68n0GM+vNStHHdxKSCydR6/8A1qhLuMjknMS+Z94Y3D0IPT/P4VVtrlpycgDGOnvWjLAkybOSB6Dn6dDUVvaRxgldwyeQfb9cUaba36BYZJxVMj6066uRAwjOWPBJ6dfT196fS2AhliMbSSSqHifHfnI6Y9CBn2NadoI40HluSAN3PcHp+XoO9c9cuXYgk8NwM+/pXRWMCCILw+OjcHr6H0BzxVgXEdScD64pGA5Hr3qhLcC2fB++/OT90DOPxI9Ks7vNQnJBwcdse4H6igDLmhTzDI5LP0AIwFx39/bt3pPMX1qnNbzWwG5gVY54zn3PPQHvUg5Galjt1NH7OrsDIob+f/6vrWiNgG0YA6ccflTBSmncRDdQRTqEJxg5BHX3/MUqIqZGcqeg9Px6nPqakpKV2MzJ4S0jEYwcdfpTPs7+o/WtRqjoFY//2Q==",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "BtvQaf_BQc_",
+        "tags": [
+            "hkig",
+            "圖書館",
+            "溫習",
+            "攝影",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "hkbu",
+            "浸會大學",
+            "2019",
+            "groupstudy",
+            "新年",
+            "香港浸會大學",
+            "buhk",
+            "小組",
+            "groupdiscussion",
+            "豬年",
+            "hkbulibrary",
+            "study",
+            "浸大",
+            "學而時習之不亦樂乎",
+            "seehkbu",
+            "新一年",
+            "library",
+            "yearofthepig",
+            "books"
+        ],
+        "taken_at_timestamp": 1549881403,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/4eabf9b65a7b23e6e7865131dfe760d5/5CED714F/t51.2885-15/e35/s150x150/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/0aef0c92cc47ed883788681f807fa4d7/5CF9DE49/t51.2885-15/e35/s240x240/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/9f38ac43f5569852dd23fdd2be715302/5CE73837/t51.2885-15/e35/s320x320/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/861bd517fec4930f294bdac972e66261/5CEA0370/t51.2885-15/e35/s480x480/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/624f69a725e1fcbe2954e6c8221fd654/5D272ACA/t51.2885-15/sh0.08/e35/s640x640/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/624f69a725e1fcbe2954e6c8221fd654/5D272ACA/t51.2885-15/sh0.08/e35/s640x640/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/9ef2764594a9ac7bbf56718d76779cf5/5CF28770/t51.2885-15/e35/50783960_2225204674185086_5154970733152267560_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3Njg3MDk1MTIzMjgwMDU3NQ%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/e17e37bcbdf916eed85ff6c9db75ac9d/5CFA7517/t51.2885-15/e35/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 259
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Spring breathes new life into the world around us.\n🌺🌸🌼\n#hkbu #seehkbu #buhk #hongkongbaptistuniversity #hkbaptistu #hkig #rooftop #green #shawcampus #blossom #grass #photooftheday #photography #snapshot #greencampus #浸大 #浸會大學 #香港浸會大學 #逸夫校園 #綠化 #天台 #環保 #春回大地 #春天 #攝影 #打卡 #花"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 3
+        },
+        "gating_info": null,
+        "id": "1974515849897402675",
+        "is_video": false,
+        "media_preview": "ACoqsRSgqZemwgevJ/KrAcEY/vIAuD2ByD/jUEcUiQsMfMWBHepVRt0WV6Kcn068VHow9fyHxp8oyeSfqKqSDDtn1/D/AOtV22BESjpyeD6ZqI+W5YuNu04yDjP+NaU58rab0JkrpFsljnHQU3cfWoZLxlJ2lSueD+Xf3qH7eT3j/WnzryJt5lUKygjcwB5OMAfWk8xSP9YWHpuGP05poacE5BKjp/k1H553Ydf0H4+tcd2+xQ7y42OSxb23f4UvlRYwefqTVsQq43oM+nRT+p/kKaE3fd5J7E4P68H86d2ugX8iqY4z0GcdBkijyIvT9T/jUx44bgjt3o2j2pc/kw5kPkDLzy3+f6fj7imlmGACMnGO5P5d/wDJxQejDsNv/oIpLn5YiRwflOR6nqfxqECHb2i+ZxzxnHGR6Zzx9auOEZfMQqw67JDn8ieQfzGfSqb/AHkPcq2ffgdfWprLpnvuH8hVxYxQwdeWLIedoXDL7DIbP5j2NRZtv+mn6Vu5p1bct/8Ahgsf/9k=",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "Btm47Q8g2Ez",
+        "tags": [
+            "blossom",
+            "hkig",
+            "環保",
+            "攝影",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "打卡",
+            "hkbu",
+            "浸會大學",
+            "香港浸會大學",
+            "shawcampus",
+            "buhk",
+            "天台",
+            "rooftop",
+            "春天",
+            "浸大",
+            "綠化",
+            "春回大地",
+            "花",
+            "逸夫校園",
+            "seehkbu",
+            "green",
+            "photooftheday",
+            "grass",
+            "greencampus",
+            "photography",
+            "snapshot"
+        ],
+        "taken_at_timestamp": 1549600653,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/e6c4b30f37e5ba4dabf61fb61957e3a9/5CF5DD28/t51.2885-15/e35/s150x150/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/cdf032b942b73baee1752f240ea343aa/5D26262E/t51.2885-15/e35/s240x240/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/4876800641227b9cc1e5ab2fc50ab324/5CE18350/t51.2885-15/e35/s320x320/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/ae3ec2a8097e772673382954a65dcde1/5CF1D417/t51.2885-15/e35/s480x480/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/ff967d852b91f4ebb129217c9599e51a/5CF76BAD/t51.2885-15/sh0.08/e35/s640x640/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/ff967d852b91f4ebb129217c9599e51a/5CF76BAD/t51.2885-15/sh0.08/e35/s640x640/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/e17e37bcbdf916eed85ff6c9db75ac9d/5CFA7517/t51.2885-15/e35/50024296_2076980125723771_6805015233004183077_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3NDUxNTg0OTg5NzQwMjY3NQ%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/9d9801cc603dd6810c2ece87ac81e08e/5CF5176B/t51.2885-15/e35/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 284
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Happy Chinese New Year! 🐽🐷🐖\n#hkbu #seehkbu #buhk #hongkongbaptistuniversity #hkbaptistu #yearofthepig #2019 #happynewyear #pig #lunaryear #chinesenewyear #chinesenewyear2019 #浸大 #浸會大學 #香港浸會大學 #豬年快樂 #新年快樂 #豬年大吉 #農曆新年 #己亥年 @joystudi0"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 1
+        },
+        "gating_info": null,
+        "id": "1971542955969898502",
+        "is_video": false,
+        "media_preview": "ACoq3+STzjH09KgSbexTkEA88duPT8anHU/57CmCMg5z+gz+dZF6dSOJ9yZyTt69KkDblDcjP0pNp6E9ecYHNKEOOp9eg/yc0PUNBxyBnJ/T/Cn0wjCkdafQIaOp+v8AQVBPcGLAUbiSM+w9f/re9Tjqfr/QVnyE7yeOvUVLdrdLuxUVd6g0h3bieSeKk+1iLmU8E4HHf/DvUBGe5GKNisdrfMM859KycXTfNfS+pq10a2NN/un6U6msMLgdMU6tzAhkUOrITjdxn8BzWFPI9u3lE7hgEMOOK6OsHV/9av8Au/1NKye5pB62Grejb90nHU1GbsuQsY5JxzV+MAKAOBiqtuoF4ABxz/I1Clztxa2NnazNeNsxDdhWx0/z/KrFFFaHKf/Z",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "BtcU99uAmgG",
+        "tags": [
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "hkbu",
+            "豬年快樂",
+            "浸會大學",
+            "2019",
+            "香港浸會大學",
+            "happynewyear",
+            "chinesenewyear",
+            "buhk",
+            "chinesenewyear2019",
+            "浸大",
+            "lunaryear",
+            "pig",
+            "seehkbu",
+            "豬年大吉",
+            "己亥年",
+            "農曆新年",
+            "yearofthepig",
+            "新年快樂"
+        ],
+        "taken_at_timestamp": 1549246256,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/e78e1f84e134d25c9fc1aafc66884986/5CE52629/t51.2885-15/e35/s150x150/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/b847095392b9917a3405bf71e4cdf6fc/5CEAE163/t51.2885-15/e35/s240x240/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/f387639424a780ca0b8554ec39837709/5CE287D9/t51.2885-15/e35/s320x320/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/5e4e9ce4a8a112e77f79bb94c5e49d6a/5CF77083/t51.2885-15/e35/s480x480/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/19a98d068f0a491be6f153773e2d2069/5CF0108E/t51.2885-15/sh0.08/e35/s640x640/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/19a98d068f0a491be6f153773e2d2069/5CF0108E/t51.2885-15/sh0.08/e35/s640x640/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/9d9801cc603dd6810c2ece87ac81e08e/5CF5176B/t51.2885-15/e35/50981015_387665852043044_5839140024980042675_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk3MTU0Mjk1NTk2OTg5ODUwMg%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/13002a285affd285dcaa55af0e258cc9/5D27E792/t51.2885-15/e35/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 427
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "#Repost @for_johnnysnake Step by step.\n.\n#hongkong #hkbu #blackandwhite #photography #streetphotography #bridge #city #buhk #seehkbu #hongkongbaptistuniversity #shawcampus #junctionroad #kowloontong #攝影 #浸大 #浸會大學 #香港浸會大學 #逸夫校園 #聯合道 #天橋 #九龍塘 #黑與白 #網友最強"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 1
+        },
+        "gating_info": null,
+        "id": "1968880330488387245",
+        "is_video": false,
+        "media_preview": "ACoq6AKAc5P5nHXP+fbijA9T+Z/xqglyWyQAcdev+JpovY/7q/5/CgDR8xR3/WmGdB3FVheoe2PcYNM8yIjblhnnJGe+cjFAFid4xgSHHcdahzD6t+tR3QS5xtcLt9Qec1V+wp/z0/Jj/hQAtuyxbsfNnHHTviowkQxnd0/2R1qxBdSz5+78uD93OR370xbzzP8AlmrfhQA3y4R03nI9eMdcUOY2HIJxyASaU3cI+9GAeR15ppmtehQjcOxoAWcpuH3WGOpz2OMCqf21hxs/z+dW5zbZ2y74yM4zjnnrx2zTAbMDG8/lQBfhihgyUI565P8AjVOKOE5wB1OMtjI7HoetW1OevNS7QewoAomLH3Y4z9ZD/wDE0wpN2iiHvuB/nirzRr6D8hVdkX0H5UALdJIpHkoH45PGQfxqhuvf7n6LVluKZuPqaAP/2Q==",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "BtS3jqgA5at",
+        "tags": [
+            "攝影",
+            "hongkongbaptistuniversity",
+            "hkbu",
+            "浸會大學",
+            "Repost",
+            "聯合道",
+            "streetphotography",
+            "city",
+            "香港浸會大學",
+            "shawcampus",
+            "buhk",
+            "天橋",
+            "hongkong",
+            "浸大",
+            "blackandwhite",
+            "九龍塘",
+            "逸夫校園",
+            "seehkbu",
+            "黑與白",
+            "bridge",
+            "網友最強",
+            "junctionroad",
+            "kowloontong",
+            "photography"
+        ],
+        "taken_at_timestamp": 1548928847,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/cb66a7c10ecfadf466abc20025097e08/5CF95FD0/t51.2885-15/e35/s150x150/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/2ffb3dfa5246686f946fb106385f5f93/5CE57C9A/t51.2885-15/e35/s240x240/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/5cce82e6615529a31a46bd5833fec25a/5D271820/t51.2885-15/e35/s320x320/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/1c09ab474915f4d68e39ed519e977b4d/5CFC917A/t51.2885-15/e35/s480x480/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/ab348be8f3e787b3b10f76ffea3dbb60/5D284277/t51.2885-15/sh0.08/e35/s640x640/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/ab348be8f3e787b3b10f76ffea3dbb60/5D284277/t51.2885-15/sh0.08/e35/s640x640/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/13002a285affd285dcaa55af0e258cc9/5D27E792/t51.2885-15/e35/50759431_741465872891511_9210570454911304860_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk2ODg4MDMzMDQ4ODM4NzI0NQ%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 480,
+            "width": 480
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/9490f76ae7bc632f9c8b97978dce8491/5CF6A31C/t51.2885-15/e35/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 97
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Do you want to know how many solar panels can be installed on your building? How much electricity will they generate annually? How much do they cost and how much will they save? Hong Kong Solar Map helps Hong Kong residents answer all these questions and many more!\n.\nHong Kong Solar Map was developed through a collaboration between Hong Kong Baptist University, WWF-HK, and Greenpeace. The map is the first of its kind in the Greater China region.\n.\nhttp://digital.lib.hkbu.edu.hk/solarmap/\n🌅\n@hkbulibrary #hkbu #buhk #hongkongbaptistuniversity #seehkbu #hkbaptistu #solar #solarpanel #solarenergy #solarmap #hongkongsolar @greenpeace_hk @wwfhk #sustainability #greenlife #浸大 #浸會大學 #香港浸會大學 #太陽能 #大廈 #天台 #節能 #環保 #能源 #綠色能源 #可持續發展"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 0
+        },
+        "gating_info": null,
+        "id": "1967491890890833469",
+        "is_video": false,
+        "media_preview": "ACoqrbfXkU8If90e/FLI7IxUDH8/b/P+FQEknnn9a6732OS3ckLKPVv0FPjl5w2Ah4OO2e+fUVXpelFr7j22FkQxsVPbv6+/40z/AD0qz/rkwfvp0919PqO1Q+U3p+tF+47E5/epn+JP1H/1v8fWoMVNGPKO4kZ9Byfx/wA+lLJ+6PygYIyD1/IHp/8AqqU7aA1fUiERPPb34FO+Vf8Aa+nAphJbrzSGq3FsOErDleMHoOn41YxbtyeCeSOeP0qrSZ+v50rfL0C4tWY/3imPuOV/qP8APr7VWqWH/WL9R/Sm9hLci/z/AJ/z/KhQT0/T/GpZOZSO2R/SpJ/lGBx9KV9vMdt/Ih2BfvH8ByaTK/3f1prdKbTsK5//2Q==",
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "BtN73NXAn49",
+        "tags": [
+            "solarmap",
+            "環保",
+            "能源",
+            "hongkongbaptistuniversity",
+            "hkbaptistu",
+            "solar",
+            "hkbu",
+            "浸會大學",
+            "太陽能",
+            "香港浸會大學",
+            "solarpanel",
+            "buhk",
+            "天台",
+            "節能",
+            "hongkongsolar",
+            "綠色能源",
+            "sustainability",
+            "solarenergy",
+            "浸大",
+            "大廈",
+            "可持續發展",
+            "seehkbu",
+            "greenlife"
+        ],
+        "taken_at_timestamp": 1548763332,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/3624ec6b45b7115ea2a91e9f3a79cd27/5CFC795E/t51.2885-15/e35/s150x150/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/6bc5f627c9d3ecbf6a583b2e9cdcc059/5CE02214/t51.2885-15/e35/s240x240/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/1878085a628092fc315a2795f19710a5/5CFB83AE/t51.2885-15/e35/s320x320/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/9490f76ae7bc632f9c8b97978dce8491/5CF6A31C/t51.2885-15/e35/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/9490f76ae7bc632f9c8b97978dce8491/5CF6A31C/t51.2885-15/e35/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/9490f76ae7bc632f9c8b97978dce8491/5CF6A31C/t51.2885-15/e35/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/9490f76ae7bc632f9c8b97978dce8491/5CF6A31C/t51.2885-15/e35/49677088_123912368661597_7293953350136776836_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2NzQ5MTg5MDg5MDgzMzQ2OQ%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    },
+    {
+        "__typename": "GraphSidecar",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://scontent-hkg3-1.cdninstagram.com/vp/9594498a94f0087e6feec4233a211f2c/5CE5B357/t51.2885-15/e35/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2",
+        "edge_media_preview_like": {
+            "count": 267
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Mr Aaron Kwok Fu-shing, a renowned film actor had presented the Distinguished Award to Mr Liu Kai-Chi, Lecturer of the Academy of Film (AF) in recognition of his exemplary contributions to the programme in the 10th Anniversary Gala Screening on 25 January 2019 to celebrate a decade of success for the Higher Diploma in Creative Film Production programme offered by AF.\n\nFounded in 2009, the Higher Diploma in Creative Film Production programme has made great efforts to equip the young generation with the professional skills and knowledge for entering into the film, TV or creative media industries. The programme has nurtured numerous aspiring directors, actors, and film-related talents. \nFor further details about the programme, please visit http://af.hkbu.edu.hk/en/hd-introduction\n🎬🎬🎬\n@af_hd_hkbu @hkbucomm @aaronkwokxx #hkbu #buhk #hongkongbaptistuniversity #seehkbu #hkbumfa #hkbuaf #hkbucomm #film #movie #arronkwok #hongkongmovie #hongkongfilm #academyoffilm #浸大 #浸會大學 #香港浸會大學 #電影學院 #郭富城 #廖啟智 #十周年 #浸大電影學院 #創意電影製作高級文憑 #香港電影"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 0
+        },
+        "gating_info": null,
+        "id": "1966750063417896669",
+        "is_video": false,
+        "media_preview": null,
+        "owner": {
+            "id": "1734295320"
+        },
+        "shortcode": "BtLTMMsAC7d",
+        "tags": [
+            "hkbuaf",
+            "廖啟智",
+            "hkbucomm",
+            "郭富城",
+            "hongkongbaptistuniversity",
+            "電影學院",
+            "hkbu",
+            "浸會大學",
+            "hongkongmovie",
+            "movie",
+            "香港浸會大學",
+            "academyoffilm",
+            "buhk",
+            "浸大電影學院",
+            "hkbumfa",
+            "arronkwok",
+            "hongkongfilm",
+            "浸大",
+            "香港電影",
+            "十周年",
+            "創意電影製作高級文憑",
+            "seehkbu",
+            "film"
+        ],
+        "taken_at_timestamp": 1548674899,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/aab998d4eecf43d6754da8f422cc6c54/5D054915/t51.2885-15/e35/s150x150/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/bd46deac5b3a915b68c28f04635862d8/5CE9725F/t51.2885-15/e35/s240x240/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/9c463daf581435b045ba2a5a5698ab87/5CE8C7E5/t51.2885-15/e35/s320x320/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/265bc16a160b370f01310e05704c5fed/5CE5DEBF/t51.2885-15/e35/s480x480/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://scontent-hkg3-1.cdninstagram.com/vp/0b4e339683b691a0e2b43c23975be32f/5CF0ABB2/t51.2885-15/sh0.08/e35/s640x640/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2"
+            }
+        ],
+        "thumbnail_src": "https://scontent-hkg3-1.cdninstagram.com/vp/0b4e339683b691a0e2b43c23975be32f/5CF0ABB2/t51.2885-15/sh0.08/e35/s640x640/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2",
+        "urls": [
+            "https://scontent-hkg3-1.cdninstagram.com/vp/9594498a94f0087e6feec4233a211f2c/5CE5B357/t51.2885-15/e35/50626398_961034374285457_6109694868821228499_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk2Njc1MDA2MDY0OTY0OTE2NQ%3D%3D.2",
+            "https://scontent-hkg3-1.cdninstagram.com/vp/4454e8dded2180b11206703cff249c9d/5D27E7F3/t51.2885-15/e35/49698585_116574432748908_2268791113697050271_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&se=7&ig_cache_key=MTk2Njc1MDA2MDY1ODI1MTg5NQ%3D%3D.2"
+        ],
+        "username": "hkbaptistu"
+    }
+]
