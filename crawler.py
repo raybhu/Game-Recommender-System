@@ -9,9 +9,9 @@ if platform.system() == 'Darwin':
 elif platform.system() == 'Windows':
     gameJSONFile = 'games.json'
 if platform.system() == 'Darwin':
-    gameFilteredJSONFile = './games_filtered.json'
+    gameCleansedJSONFile = './games_cleansed.json'
 elif platform.system() == 'Windows':
-    gameFilteredJSONFile = 'games_filtered.json'
+    gameCleansedJSONFile = 'games_cleansed.json'
 # Crawler
 topPS4GamesUrl = 'https://www.metacritic.com/browse/games/release-date/available/ps4/metascore'
 headers = {'User-Agent': 'Mozilla/5.0'}
@@ -44,7 +44,7 @@ for index, item in enumerate(gameHtmlList):
         cScore = cReview.find('div', {'class': 'metascore_w'}).text
         review = {"source": cSource, "review": cReviewBody, "score": cScore}
         criticReviewsList.append(review)
-        print(cSource, cReviewBody, cScore)
+        # print(cSource, cReviewBody, cScore)
     for uIndex, uReview in enumerate(userReviewsListHtml):
         uName = uReview.find('div', {'class': 'name'}).find('a').text
         expandedReview = uReview.find(
@@ -54,9 +54,9 @@ for index, item in enumerate(gameHtmlList):
         uScore = uReview.find('div', {'class': 'metascore_w'}).text
         review = {"username": uName, "review": uReviewBody, "score": uScore}
         userReviewsList.append(review)
-        print(uName, uReviewBody, uScore)
+        # print(uName, uReviewBody, uScore)
     game = {'name': name, 'metaScore': metaScore, 'userScore': userScore, 'URL': link,
-            'criticReviews': criticReviewsList, 'userReviewsList': userReviewsList}
+            'criticReviewsList': criticReviewsList, 'userReviewsList': userReviewsList}
     gameList.append(game)
 
 with open(gameJSONFile, 'w') as f:
