@@ -14,7 +14,8 @@ scikit-learn = "*"
 requests = "*"
 lxml = "*"
 nltk = "*"
-
+numpy = "*"
+openpyxl = "*"
 
 [requires]
 python_version = "3.7"
