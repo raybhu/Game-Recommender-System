@@ -16,6 +16,7 @@ lxml = "*"
 nltk = "*"
 numpy = "*"
 openpyxl = "*"
+django = "*"
 
 [requires]
 python_version = "3.7"
