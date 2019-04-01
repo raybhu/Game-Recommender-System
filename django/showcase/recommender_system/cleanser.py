@@ -1,18 +1,13 @@
 import nltk
-import platform
+import os
 import json
 import re
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
 # path
-if platform.system() == 'Darwin':
-    gameJSONFile = './games.json'
-elif platform.system() == 'Windows':
-    gameJSONFile = 'games.json'
-if platform.system() == 'Darwin':
-    gameCleansedJSONFile = './games_cleansed.json'
-elif platform.system() == 'Windows':
-    gameCleansedJSONFile = 'games_cleansed.json'
+gameJSONFile = os.path.abspath(os.path.dirname(__file__)+'/games.json')
+gameCleansedJSONFile = os.path.abspath(
+    os.path.dirname(__file__)+'/games_cleansed.json')
 # stopword
 # nltk.download('stopwords')
 

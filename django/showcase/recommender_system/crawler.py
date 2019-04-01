@@ -1,17 +1,13 @@
 from bs4 import BeautifulSoup
-import platform
 import requests
 import json
 import re
+import os
 # path
-if platform.system() == 'Darwin':
-    gameJSONFile = './games.json'
-elif platform.system() == 'Windows':
-    gameJSONFile = 'games.json'
-if platform.system() == 'Darwin':
-    gameCleansedJSONFile = './games_cleansed.json'
-elif platform.system() == 'Windows':
-    gameCleansedJSONFile = 'games_cleansed.json'
+gameJSONFile = os.path.abspath(os.path.dirname(__file__)+'/games.json')
+gameCleansedJSONFile = os.path.abspath(
+    os.path.dirname(__file__)+'/games_cleansed.json')
+
 # Crawler
 topPS4GamesUrl = 'https://www.metacritic.com/browse/games/release-date/available/ps4/metascore'
 headers = {'User-Agent': 'Mozilla/5.0'}
@@ -32,6 +28,8 @@ for index, item in enumerate(gameHtmlList):
     if metaScore == 'tbd' or userScore == 'tbd':
         continue
     print(name, metaScore, userScore)
+    regex = re.compile('product_image*')
+    image = html.find('img', {'class': regex})['src']
     criticReviewsListHtml = html.find_all(
         'li', class_="critic_review")
     userReviewsListHtml = html.find_all(
@@ -56,7 +54,7 @@ for index, item in enumerate(gameHtmlList):
         userReviewsList.append(review)
         # print(uName, uReviewBody, uScore)
     game = {'name': name, 'metaScore': metaScore, 'userScore': userScore, 'URL': link,
-            'criticReviewsList': criticReviewsList, 'userReviewsList': userReviewsList}
+            'criticReviewsList': criticReviewsList, 'userReviewsList': userReviewsList, 'image': image}
     gameList.append(game)
 
 with open(gameJSONFile, 'w') as f:

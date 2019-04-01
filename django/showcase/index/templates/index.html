@@ -1,0 +1,38 @@
+{% extends "base_generic.html" %} {% block content %}
+
+<div class=" container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Game Recommender System</h1>
+      <p class="lead">Please mark your favourite games</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
+      {% csrf_token %}
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Content-Based' value='Content-Based' >
+      <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' >
+    </form>
+</div>
+<div class="container">
+  <div class="row col-md-12">
+    {% for game in gameList %}
+    <div class="card col-md-3">
+      <img src="{{ game.image }}" class="card-img-top img-fluid" alt="" />
+      <div class="card-body">
+        <p class="card-title">{{ game.name }}</p>
+      </div>
+      <div class="card-footer">
+      <form action="/index/" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="name" value="{{ game.name }}" />
+        <input type="submit" value=❤ class="btn btn-danger col-12">
+        </form>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
