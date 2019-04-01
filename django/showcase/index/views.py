@@ -27,6 +27,8 @@ def index(request):
         if 'clear' in request.POST:
             print('1')
             request.session['favoriteGames'] = []
+            with open(gameCleansedJSONFile, 'r') as f:
+                gameList = json.load(f)
         elif 'name' in request.POST:
             gameName = request.POST['name']
             if not 'favoriteGames' in request.session or not request.session['favoriteGames']:
@@ -37,8 +39,12 @@ def index(request):
                 if gameName not in tmpList:
                     tmpList.append(gameName)
                     request.session['favoriteGames'] = tmpList
-    with open(gameCleansedJSONFile, 'r') as f:
-        gameList = json.load(f)
+            gameList = cb.getRecommenderList(request.session['favoriteGames'])
+            for x in gameList:
+                print(x['name'])
+        else:
+            with open(gameCleansedJSONFile, 'r') as f:
+                gameList = json.load(f)
     # Render the HTML template index.html with the data in the context variable
     print(request.session['favoriteGames'])
     return render(

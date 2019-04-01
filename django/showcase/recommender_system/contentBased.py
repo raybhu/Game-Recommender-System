@@ -26,7 +26,7 @@ def getRecommenderList(favoriteGamesList):
     for index, game in enumerate(gameList):
         reviewSum = ''
         for review in game['criticReviewsList']:
-            if review['score'] and int(review['score']) >= 90:
+            if review['score'] and int(review['score']) >= 88:
                 reviewSum = reviewSum+review['review']
         # valuableCriticReviewList.append(reviewSum)
         gameList[index]['reviewSum'] = reviewSum
@@ -41,11 +41,9 @@ def getRecommenderList(favoriteGamesList):
         if game['name'] in favoriteGamesList:
             gamesUserLikedIndex.append(index)
 
-    print(gamesUserLikedIndex)
     valuableCriticReviewList = []
     for index in gamesUserLikedIndex:
         valuableCriticReviewList.append(gameList[index]['reviewSum'])
-    print(len(valuableCriticReviewList))
 
     vectorizer = TfidfVectorizer()
     X = vectorizer.fit_transform(valuableCriticReviewList)
@@ -62,20 +60,23 @@ def getRecommenderList(favoriteGamesList):
                 Y = vectorizer_1.fit_transform(listTesta)
                 print(cosine_similarity(Y[0: 1], Y))
                 sumResult = np.sum(cosine_similarity(Y[0: 1], Y))
+                gameList[gIndex]['similaritySum'] = sumResult
                 # print(sumResult)
                 similarityResultDict[gameList[gIndex]['name']] = sumResult
+        else:
+            gameList[gIndex]['similaritySum'] = 0
+    for gIndex in gamesUserLikedIndex:
+        print(gameList[gIndex]['name'])
     print(sorted(similarityResultDict.items(), key=lambda x: x[1]))
-    for index in gamesUserLikedIndex:
-        print(gameList[index]['name'])
-
-    # game_index = list(range(1, len(gamesUserLikedIndex)+1))
-    # df = pd.DataFrame(X.todense(), index=game_index,
-    #                   columns=vectorizer.get_feature_names())
-    # print(df)
-    # writer = ExcelWriter('tf-idf.xlsx')
-    # df.to_excel(writer, 'tf-idf')
-    # writer.save()
-    return True
+    gameList = sorted(gameList, key=lambda e: e['similaritySum'], reverse=True)
+    return gameList
+# game_index = list(range(1, len(gamesUserLikedIndex)+1))
+# df = pd.DataFrame(X.todense(), index=game_index,
+#                   columns=vectorizer.get_feature_names())
+# print(df)
+# writer = ExcelWriter('tf-idf.xlsx')
+# df.to_excel(writer, 'tf-idf')
+# writer.save()
 
 
 getRecommenderList(['Grand Theft Auto V'])
