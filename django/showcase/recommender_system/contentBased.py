@@ -18,25 +18,22 @@ def getRecommenderList(favoriteGamesList):
     gameJSONFile = os.path.abspath(os.path.dirname(__file__)+'/games.json')
     gameCleansedJSONFile = os.path.abspath(
         os.path.dirname(__file__)+'/games_cleansed.json')
-    # tranformer
     with open(gameCleansedJSONFile, 'r') as f:
         gameList = json.load(f)
     # print(gameList)
-
     for index, game in enumerate(gameList):
         reviewSum = ''
         for review in game['criticReviewsList']:
             if review['score'] and int(review['score']) >= 88:
                 reviewSum = reviewSum+review['review']
-        # valuableCriticReviewList.append(reviewSum)
         gameList[index]['reviewSum'] = reviewSum
 
     # gamesUserLikedIndex = [10, 20, 30, 40, 50]
-    gamesUserLikedIndex = []
     # for index, game in enumerate(gameList):
     #     if 'FIFA' in game['name'] and len(gamesUserLikedIndex) is not 3:
     #         gamesUserLikedIndex.append(index)
 
+    gamesUserLikedIndex = []
     for index, game in enumerate(gameList):
         if game['name'] in favoriteGamesList:
             gamesUserLikedIndex.append(index)
@@ -45,10 +42,17 @@ def getRecommenderList(favoriteGamesList):
     for index in gamesUserLikedIndex:
         valuableCriticReviewList.append(gameList[index]['reviewSum'])
 
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(valuableCriticReviewList)
-    print(type(X), X.toarray(), X.shape, vectorizer.get_feature_names)
+    # vectorizer = TfidfVectorizer()
+    # X = vectorizer.fit_transform(valuableCriticReviewList)
+    # print(type(X), X.toarray(), X.shape, vectorizer.get_feature_names)
     # print(X[:, 0:50].toarray())
+    # game_index = list(range(1, len(gamesUserLikedIndex)+1))
+    # df = pd.DataFrame(X.todense(), index=game_index,
+    #                   columns=vectorizer.get_feature_names())
+    # print(df)
+    # writer = ExcelWriter('tf-idf.xlsx')
+    # df.to_excel(writer, 'tf-idf')
+    # writer.save()
     similarityResultDict = {}
     for gIndex, game in enumerate(gameList):
         if gIndex not in gamesUserLikedIndex:
@@ -70,13 +74,7 @@ def getRecommenderList(favoriteGamesList):
     print(sorted(similarityResultDict.items(), key=lambda x: x[1]))
     gameList = sorted(gameList, key=lambda e: e['similaritySum'], reverse=True)
     return gameList
-# game_index = list(range(1, len(gamesUserLikedIndex)+1))
-# df = pd.DataFrame(X.todense(), index=game_index,
-#                   columns=vectorizer.get_feature_names())
-# print(df)
-# writer = ExcelWriter('tf-idf.xlsx')
-# df.to_excel(writer, 'tf-idf')
-# writer.save()
 
 
-getRecommenderList(['Grand Theft Auto V'])
+# Test
+# getRecommenderList(['Grand Theft Auto V'])

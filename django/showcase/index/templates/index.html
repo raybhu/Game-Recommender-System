@@ -11,6 +11,7 @@
 <div class="container">
     <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
       {% csrf_token %}
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Collaborative-Filtering' value='Collaborative-Filtering' >
       <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Content-Based' value='Content-Based' >
       <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' >
     </form>

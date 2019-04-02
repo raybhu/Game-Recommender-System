@@ -17,6 +17,7 @@ nltk = "*"
 numpy = "*"
 openpyxl = "*"
 django = "*"
+langid = "*"
 
 [requires]
 python_version = "3.7"

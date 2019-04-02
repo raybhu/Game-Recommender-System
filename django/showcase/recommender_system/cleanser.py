@@ -4,6 +4,9 @@ import json
 import re
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
+import langid
+
+
 # path
 gameJSONFile = os.path.abspath(os.path.dirname(__file__)+'/games.json')
 gameCleansedJSONFile = os.path.abspath(
@@ -26,41 +29,34 @@ def stopword_filtered(words):
     return filtered_list
 
 
-# judge english
-
-
-def judge_pure_english(keyword):
-    return all(ord(c) < 128 for c in keyword)
-
-
 # cleanser
 with open(gameJSONFile, 'r') as f:
     gameList = json.load(f)
 
 for index, game in enumerate(gameList):
     print('The Cleanser is working on %d game.' % (index+1))
+    tmpCriticReviewsList = []
     for cIndex, criticReview in enumerate(game['criticReviewsList']):
-        # print(criticReview)
-        review = stopword_filtered(criticReview['review'].split())
-        review = ' '.join(review)
-        review = re.sub(
-            '[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
-        if judge_pure_english(review):
-            gameList[index]['criticReviewsList'][cIndex]['review'] = review
-        else:
-            gameList[index]['criticReviewsList'].pop(cIndex)
-    print(gameList[index]['criticReviewsList'])
-    for uIndex, userReview in enumerate(game['userReviewsList']):
-        review = stopword_filtered(userReview['review'].split())
-        review = ' '.join(review)
-        review = re.sub(
-            '[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
-        if judge_pure_english(review):
-            gameList[index]['userReviewsList'][uIndex]['review'] = review
+        if langid.classify(criticReview['review'])[0] == "en":
+            review = stopword_filtered(criticReview['review'].split())
+            review = ' '.join(review)
+            review = re.sub(
+                '[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
+            criticReview['review'] = review
+            tmpCriticReviewsList.append(criticReview)
+    gameList[index]['criticReviewsList'] = tmpCriticReviewsList
+    tmpUserReviewsList = []
 
-        else:
-            gameList[index]['userReviewsList'].pop(uIndex)
-    print(gameList[index]['userReviewsList'])
+    for uIndex, userReview in enumerate(game['userReviewsList']):
+        if langid.classify(userReview['review'])[0] == "en":
+            review = stopword_filtered(userReview['review'].split())
+            review = ' '.join(review)
+            review = re.sub(
+                '[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
+            userReview['review'] = review
+            tmpUserReviewsList.append(userReview)
+    gameList[index]['userReviewsList'] = tmpUserReviewsList
+
 
 with open(gameCleansedJSONFile, 'w') as f:
     f.write(json.dumps(gameList))
