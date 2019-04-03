@@ -1,3 +1,4 @@
 {
-  "python.pythonPath": ".venv/bin/python"
+  "python.pythonPath": "E:\\7350\\comp7630-group-project\\.venv\\Scripts\\python.exe",
+  "git.ignoreLimitWarning": true
 }

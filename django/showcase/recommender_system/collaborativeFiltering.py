@@ -57,7 +57,7 @@ gameCleansedJSONFile = os.path.abspath(
     os.path.dirname(__file__)+'/games_cleansed.json')
 criticScoreJSONFile = os.path.abspath(
     os.path.dirname(__file__)+'/critic_score.json')
-with open(gameCleansedJSONFile, 'r') as f:
+with open(gameCleansedJSONFile, 'r', encoding='UTF-8') as f:
     gameList = json.load(f)
 gameNameList = []
 for game in gameList:
