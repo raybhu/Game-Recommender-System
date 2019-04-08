@@ -1,5 +1,36 @@
-{% extends "base_generic.html" %} {% block content %}
+{% extends "base_generic.html" %} 
 
+{% block css %}
+<style type="text/css">
+        
+
+</style>
+
+{% endblock %}
+
+
+
+{% block script %}
+
+<script language="javascript" type="text/javascript">
+        function showMask() {
+          $('#loadingModal').modal({backdrop: 'static', keyboard: false});
+          $("#loadingModal").modal('show');
+            
+        }
+</script>
+{% endblock %}
+{% block content %}
+<div class="modal fade" id="loadingModal">
+	<div style="width: 200px;height:20px; z-index: 20000; position: absolute; text-align: center; left: 50%; top: 50%;margin-left:-100px;margin-top:-10px">
+		<div class="spinner-border text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+	</div>
+</div>
+    
+</div>
+</div>
 <div class=" container">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -11,9 +42,9 @@
 <div class="container">
     <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
       {% csrf_token %}
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Collaborative-Filtering' value='Collaborative-Filtering' >
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Content-Based' value='Content-Based' >
-      <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' >
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Collaborative-Filtering' value='Collaborative-Filtering' onclick="showMask();">
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Content-Based' value='Content-Based' onclick="showMask();">
+      <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' onclick="showMask();">
     </form>
 </div>
 <div class="container">
@@ -28,12 +59,13 @@
       <form action="/index/" method="POST">
         {% csrf_token %}
         <input type="hidden" name="name" value="{{ game.name }}" />
-        <input type="submit" value=❤ class="btn btn-danger col-12">
+        <input type="submit" value=❤ class="btn btn-danger col-12" onclick="showMask();">
         </form>
       </div>
     </div>
     {% endfor %}
   </div>
 </div>
+
 {% endblock %}
 

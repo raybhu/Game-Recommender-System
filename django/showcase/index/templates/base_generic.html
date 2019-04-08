@@ -13,6 +13,10 @@
     <!-- Add additional CSS in static file
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" /> -->
+    {% block css %}
+    {% endblock %}
+    {% block script %}
+    {% endblock %}
   </head>
 
   <body>
@@ -22,8 +26,6 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
-
   </nav>
   </div>
   {% block content %}

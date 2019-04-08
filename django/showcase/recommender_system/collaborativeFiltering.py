@@ -108,9 +108,9 @@ def getRecommenderDict(favoriteGamesDict):
     return gameList
 
 
-favoriteGamesDict = {'FIFA 18': 100, 'FIFA 17': 100,
-                     "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
+# favoriteGamesDict = {'FIFA 18': 100, 'FIFA 17': 100,
+#                      "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
 # getRecommenderDict(favoriteGamesDict)
-t1 = threading.Thread(target=getRecommenderDict, args=(favoriteGamesDict,))
-t1.start()
-t1.join()
+# t1 = threading.Thread(target=getRecommenderDict, args=(favoriteGamesDict,))
+# t1.start()
+# t1.join()
