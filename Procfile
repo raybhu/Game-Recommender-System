@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: python django/showcase/manage.py  runserver
