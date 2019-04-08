@@ -59,10 +59,6 @@ criticScoreJSONFile = os.path.abspath(
     os.path.dirname(__file__)+'/critic_score.json')
 with open(gameCleansedJSONFile, 'r', encoding='UTF-8') as f:
     gameList = json.load(f)
-gameNameList = []
-for game in gameList:
-    gameNameList.append(game['name'])
-
 criticReviewsDict = {}
 for gIndex, game in enumerate(gameList):
     for cReview in game['criticReviewsList']:
@@ -77,10 +73,10 @@ for gIndex, game in enumerate(gameList):
 testDict1 = {'FIFA 18': 100, 'FIFA 17': 100,
              "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
 predictResultDict = {}
-for gName1 in gameNameList:
-    if gName1 not in testDict1.keys():
+for game in gameList:
+    if game['name'] not in testDict1.keys():
         testDict = dict(testDict1)
-        testDict[gName1] = 0
+        testDict[game['name']] = 0
 
         filteredCriticReviewsDict = {}
         for cSourceName, cGameScoreDict in criticReviewsDict.items():
@@ -105,9 +101,9 @@ for gName1 in gameNameList:
         rowNames = scoreMatrix.index.values
         userRowNumber = len(scoreMatrix.index)
         scoreMatrix = pd.DataFrame(scoreMatrix.values)
-        print(scoreMatrix, scoreMatrix.values, userRowNumber)
-        # findKSimilarCritic(userRowNumber, scoreMatrix, rowNames)
-        predictResultDict[gName1] = predict_userbased(
+        # print(scoreMatrix, scoreMatrix.values, userRowNumber)
+
+        predictResultDict[game['name']] = predict_userbased(
             userRowNumber, len(testDict), scoreMatrix, rowNames, columnNames)
 
 print(predictResultDict)
