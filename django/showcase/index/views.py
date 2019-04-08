@@ -12,14 +12,11 @@ def index(request):
     """
     View function for home page of site.
     """
-    if platform.system() == 'Darwin':
-        gameJSONFile = './recommender_system/games.json'
-    elif platform.system() == 'Windows':
-        gameJSONFile = '/recommender_system/games.json'
-    if platform.system() == 'Darwin':
-        gameCleansedJSONFile = './recommender_system/games_cleansed.json'
-    elif platform.system() == 'Windows':
-        gameCleansedJSONFile = '/recommender_system/games_cleansed.json'
+
+    gameJSONFile = os.path.abspath(
+        os.curdir)+'/django/showcase/recommender_system/games.json'
+    gameCleansedJSONFile = os.path.abspath(
+        os.curdir)+'/django/showcase/recommender_system/games_cleansed.json'
     if request.method == 'GET':
         with open(gameCleansedJSONFile, 'r') as f:
             gameList = json.load(f)

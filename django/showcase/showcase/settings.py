@@ -26,7 +26,8 @@ SECRET_KEY = '1!v4e^gj7606+d@o1jv-7qwasx^-91c=!z&77f+!9^(49pabw='
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'wi-project.herokuapp.com'
+    'wi-project.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
