@@ -39,11 +39,12 @@ def index(request):
             gameList = cb.getRecommenderList(request.session['favoriteGames'])
             for x in gameList:
                 print(x['name'])
+            print(request.session['favoriteGames'])
         else:
             with open(gameCleansedJSONFile, 'r') as f:
                 gameList = json.load(f)
     # Render the HTML template index.html with the data in the context variable
-    print(request.session['favoriteGames'])
+
     return render(
         request,
         'index.html',
