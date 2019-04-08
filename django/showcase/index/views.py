@@ -12,9 +12,6 @@ def index(request):
     """
     View function for home page of site.
     """
-
-    gameJSONFile = os.path.abspath(
-        os.curdir)+'/django/showcase/recommender_system/games.json'
     gameCleansedJSONFile = os.path.abspath(
         os.curdir)+'/django/showcase/recommender_system/games_cleansed.json'
     if request.method == 'GET':

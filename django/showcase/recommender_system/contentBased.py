@@ -15,7 +15,6 @@ import numpy as np
 
 def getRecommenderList(favoriteGamesList):
     # path
-    gameJSONFile = os.path.abspath(os.path.dirname(__file__)+'/games.json')
     gameCleansedJSONFile = os.path.abspath(
         os.path.dirname(__file__)+'/games_cleansed.json')
     with open(gameCleansedJSONFile, 'r') as f:
@@ -69,8 +68,8 @@ def getRecommenderList(favoriteGamesList):
                 similarityResultDict[gameList[gIndex]['name']] = sumResult
         else:
             gameList[gIndex]['similaritySum'] = 0
-    for gIndex in gamesUserLikedIndex:
-        print(gameList[gIndex]['name'])
+    # for gIndex in gamesUserLikedIndex:
+    #     print(gameList[gIndex]['name'])
     print(sorted(similarityResultDict.items(), key=lambda x: x[1]))
     gameList = sorted(gameList, key=lambda e: e['similaritySum'], reverse=True)
     return gameList

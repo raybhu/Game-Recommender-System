@@ -2,6 +2,7 @@ import os
 import json
 import numpy as np
 import pandas as pd
+import threading
 from sklearn.neighbors import NearestNeighbors
 
 
@@ -55,63 +56,61 @@ def predict_userbased(userRowNumber, gameColumnNumber, scoreMatrix, rowNames, co
 gameJSONFile = os.path.abspath(os.path.dirname(__file__)+'/games.json')
 gameCleansedJSONFile = os.path.abspath(
     os.path.dirname(__file__)+'/games_cleansed.json')
-criticScoreJSONFile = os.path.abspath(
-    os.path.dirname(__file__)+'/critic_score.json')
-with open(gameCleansedJSONFile, 'r', encoding='UTF-8') as f:
-    gameList = json.load(f)
-criticReviewsDict = {}
-for gIndex, game in enumerate(gameList):
-    for cReview in game['criticReviewsList']:
-        if cReview['source'] not in criticReviewsDict.keys():
-            criticReviewsDict[cReview['source']] = {}
-            criticReviewsDict[cReview['source']
-                              ][game['name']] = int(cReview['score'])
-        else:
-            criticReviewsDict[cReview['source']
-                              ][game['name']] = int(cReview['score'])
-# print(criticReviewsDict)
-testDict1 = {'FIFA 18': 100, 'FIFA 17': 100,
-             "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
-predictResultDict = {}
-for game in gameList:
-    if game['name'] not in testDict1.keys():
-        testDict = dict(testDict1)
-        testDict[game['name']] = 0
-
-        filteredCriticReviewsDict = {}
-        for cSourceName, cGameScoreDict in criticReviewsDict.items():
-            sumScore = 0
-            filteredScoreDict = {}
-            for gName, gScore in cGameScoreDict.items():
-                sumScore += int(gScore)
-                if gName in testDict.keys():
-                    filteredScoreDict[gName] = gScore
-            if filteredScoreDict:
-                filteredCriticReviewsDict[cSourceName] = filteredScoreDict
-                for key, value in testDict.items():
-                    if key not in filteredCriticReviewsDict[cSourceName].keys():
-                        filteredCriticReviewsDict[cSourceName][key] = round(
-                            sumScore / len(cGameScoreDict))
-                        # filteredCriticReviewsDict[cSourceName][key] = 0
-        # print(filteredCriticReviewsDict)
-
-        filteredCriticReviewsDict['User'] = testDict
-        scoreMatrix = pd.DataFrame(filteredCriticReviewsDict).transpose()
-        columnNames = scoreMatrix.columns.values
-        rowNames = scoreMatrix.index.values
-        userRowNumber = len(scoreMatrix.index)
-        scoreMatrix = pd.DataFrame(scoreMatrix.values)
-        # print(scoreMatrix, scoreMatrix.values, userRowNumber)
-
-        predictResultDict[game['name']] = predict_userbased(
-            userRowNumber, len(testDict), scoreMatrix, rowNames, columnNames)
-
-print(predictResultDict)
-with open(criticScoreJSONFile, 'w') as f:
-    f.write(json.dumps(predictResultDict))
-    f.close()
+criticReviewsDictJSONFile = os.path.abspath(
+    os.path.dirname(__file__)+'/critic_reviews.json')
+predictResultJSONFile = os.path.abspath(
+    os.path.dirname(__file__)+'/predict_result.json')
 
 
-def getRecommenderList(favoriteGamesDict):
+def getRecommenderDict(favoriteGamesDict):
 
-    return True
+    with open(gameCleansedJSONFile, 'r', encoding='UTF-8') as f:
+        gameList = json.load(f)
+    with open(criticReviewsDictJSONFile, 'r', encoding='UTF-8') as f:
+        criticReviewsDict = json.load(f)
+    for index, game in enumerate(gameList):
+        if game['name'] not in favoriteGamesDict.keys():
+            testDict = dict(favoriteGamesDict)
+            testDict[game['name']] = 0
+            filteredCriticReviewsDict = {}
+            for cSourceName, cGameScoreDict in criticReviewsDict.items():
+                sumScore = 0
+                filteredScoreDict = {}
+                for gName, gScore in cGameScoreDict.items():
+                    sumScore += int(gScore)
+                    if gName in testDict.keys():
+                        filteredScoreDict[gName] = gScore
+                if filteredScoreDict:
+                    filteredCriticReviewsDict[cSourceName] = filteredScoreDict
+                    for key in testDict.keys():
+                        if key not in filteredCriticReviewsDict[cSourceName].keys():
+                            filteredCriticReviewsDict[cSourceName][key] = round(
+                                sumScore / len(cGameScoreDict))
+                            # filteredCriticReviewsDict[cSourceName][key] = 0
+            # print(filteredCriticReviewsDict)
+
+            filteredCriticReviewsDict['User'] = testDict
+            scoreMatrix = pd.DataFrame(
+                filteredCriticReviewsDict).transpose()
+            columnNames = scoreMatrix.columns.values
+            rowNames = scoreMatrix.index.values
+            userRowNumber = len(scoreMatrix.index)
+            scoreMatrix = pd.DataFrame(scoreMatrix.values)
+            # print(scoreMatrix, scoreMatrix.values, userRowNumber)
+
+            gameList[index]['predictedScore'] = predict_userbased(
+                userRowNumber, len(testDict), scoreMatrix, rowNames, columnNames)
+
+    with open(predictResultJSONFile, 'w') as f:
+        f.write(json.dumps(gameList))
+        print('The predict result has saved in '+predictResultJSONFile)
+        f.close()
+    return gameList
+
+
+favoriteGamesDict = {'FIFA 18': 100, 'FIFA 17': 100,
+                     "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
+# getRecommenderDict(favoriteGamesDict)
+t1 = threading.Thread(target=getRecommenderDict, args=(favoriteGamesDict,))
+t1.start()
+t1.join()

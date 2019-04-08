@@ -41,7 +41,7 @@ for index, game in enumerate(gameList):
             review = stopword_filtered(criticReview['review'].split())
             review = ' '.join(review)
             review = re.sub(
-                '[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
+                r'[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
             criticReview['review'] = review
             tmpCriticReviewsList.append(criticReview)
     gameList[index]['criticReviewsList'] = tmpCriticReviewsList
@@ -52,7 +52,7 @@ for index, game in enumerate(gameList):
             review = stopword_filtered(userReview['review'].split())
             review = ' '.join(review)
             review = re.sub(
-                '[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
+                r'[;:.,!?\-/+^\'’_$%*()`~\"@#&={}\[\]|\\\\<>]', '', review)
             userReview['review'] = review
             tmpUserReviewsList.append(userReview)
     gameList[index]['userReviewsList'] = tmpUserReviewsList
