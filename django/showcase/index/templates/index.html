@@ -41,10 +41,10 @@
 <div class="container">
     <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
       {% csrf_token %}
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Collaborative-Filtering' onclick="showMask();">
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Content-Based' onclick="showMask();">
-      <input type="hidden" name="method" value="{{ rsMethod }}" />
-      <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' onclick="showMask();">
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Collaborative-Filtering' onclick="showMask();"/>
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Content-Based' onclick="showMask();"/>
+      <input type="hidden" name="currentMethod" value="{{ rsMethod }}" />
+      <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' onclick="showMask();"/>
     </form>
 </div>
 <div class="container">
@@ -65,10 +65,19 @@
           {% elif rsMethod == 2%}
           <input type="hidden" name="method" value="{{ rsMethod }}" />
           <input type="hidden" name="name" value="{{ game.name }}" />
-          <input type="submit" value=❤ class="btn btn-danger col-12" onclick="showMask();">
+          {% if not 'score' in %}
+          <div class="row col-16" align="center" >
+            <input type="range" name="score" id="range" min="0" max="100" step="1" value="0" class="col-9" onchange="test()"/>
+            <p id="score" class="col-3">0</p>
+          </div>
+          <script>
+            function test(){
+              score = document.getElementById("range").value;
+              document.getElementById("score").innerHTML=score;
+            }
+          </script>
+          <input type="submit" value=✔︎ class="btn btn-danger col-12" onclick="showMask();"/>
           {% endif %}
-          
-          
         </form>
       </div>
     </div>
