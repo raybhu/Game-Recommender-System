@@ -23,8 +23,7 @@
 {% block content %}
 <div class="modal fade" id="loadingModal">
 	<div style="width: 200px;height:20px; z-index: 20000; position: absolute; text-align: center; left: 50%; top: 50%;margin-left:-100px;margin-top:-10px">
-		<div class="spinner-border text-light" role="status">
-      <span class="sr-only">Loading...</span>
+    <div class="spinner-border text-light" role="status">
     </div>
 	</div>
 </div>
@@ -42,8 +41,9 @@
 <div class="container">
     <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
       {% csrf_token %}
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Collaborative-Filtering' value='Collaborative-Filtering' onclick="showMask();">
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='Content-Based' value='Content-Based' onclick="showMask();">
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Collaborative-Filtering' onclick="showMask();">
+      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Content-Based' onclick="showMask();">
+      <input type="hidden" name="method" value="{{ rsMethod }}" />
       <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' onclick="showMask();">
     </form>
 </div>
@@ -56,10 +56,19 @@
         <p class="card-title">{{ game.name }}</p>
       </div>
       <div class="card-footer">
-      <form action="/index/" method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="name" value="{{ game.name }}" />
-        <input type="submit" value=❤ class="btn btn-danger col-12" onclick="showMask();">
+        <form action="/index/" method="POST">
+          {% csrf_token %}
+          {% if rsMethod == 1%}
+          <input type="hidden" name="method" value="{{ rsMethod }}" />
+          <input type="hidden" name="name" value="{{ game.name }}" />
+          <input type="submit" value=❤ class="btn btn-danger col-12" onclick="showMask();">
+          {% elif rsMethod == 2%}
+          <input type="hidden" name="method" value="{{ rsMethod }}" />
+          <input type="hidden" name="name" value="{{ game.name }}" />
+          <input type="submit" value=❤ class="btn btn-danger col-12" onclick="showMask();">
+          {% endif %}
+          
+          
         </form>
       </div>
     </div>

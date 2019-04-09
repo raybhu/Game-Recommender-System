@@ -17,10 +17,14 @@ def index(request):
     if request.method == 'GET':
         with open(gameCleansedJSONFile, 'r') as f:
             gameList = json.load(f)
+        rsMethod = 1
     elif request.method == 'POST':
         if 'clear' in request.POST:
-            print('1')
+
             request.session['favoriteGames'] = []
+            request.session['scoredGames'] = []
+            rsMethod = int(request.POST['method'])
+
             with open(gameCleansedJSONFile, 'r') as f:
                 gameList = json.load(f)
         elif 'name' in request.POST:
@@ -36,14 +40,27 @@ def index(request):
             gameList = cb.getRecommenderList(request.session['favoriteGames'])
             for x in gameList:
                 print(x['name'])
+            rsMethod = 1
             print(request.session['favoriteGames'])
+        elif 'method' in request.POST:
+            if request.POST['method'] == 'Content-Based':
+                request.session['favoriteGames'] = []
+                with open(gameCleansedJSONFile, 'r') as f:
+                    gameList = json.load(f)
+                rsMethod = 1
+            elif request.POST['method'] == 'Collaborative-Filtering':
+                request.session['scoredGames'] = []
+                with open(gameCleansedJSONFile, 'r') as f:
+                    gameList = json.load(f)
+                rsMethod = 2
+
         else:
             with open(gameCleansedJSONFile, 'r') as f:
                 gameList = json.load(f)
     # Render the HTML template index.html with the data in the context variable
-
+    print(rsMethod)
     return render(
         request,
         'index.html',
-        context={'gameList': gameList}
+        context={'gameList': gameList, 'rsMethod': rsMethod}
     )
