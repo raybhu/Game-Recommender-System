@@ -65,7 +65,6 @@
           {% elif rsMethod == 2%}
           <input type="hidden" name="method" value="{{ rsMethod }}" />
           <input type="hidden" name="name" value="{{ game.name }}" />
-          {% if not 'score' in %}
           <div class="row col-16" align="center" >
             <input type="range" name="score" id="range" min="0" max="100" step="1" value="0" class="col-9" onchange="test()"/>
             <p id="score" class="col-3">0</p>
