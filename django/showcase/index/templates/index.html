@@ -44,12 +44,15 @@
     <div class="container col-9">
       <h1 class="display-4">Game Recommender System</h1>
       <p class="lead">Please mark your favourite games</p>
+      {% load static %}
+        <div class="col-3">
+          <img src="{% static "heroku_url.png" %}" alt="" />
+        </div>
     </div>
-    <div class="col-3">
-      <img src="/Users/slash/Desktop/GIt/comp7630-group-project/django/showcase/index/heroku_url.png" alt="" />
-    </div>
+    
   </div>
 </div>
+
 <div class="container">
     <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
       {% csrf_token %}
