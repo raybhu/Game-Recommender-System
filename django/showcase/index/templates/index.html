@@ -49,12 +49,12 @@
 <div class=" container">
   <div class="jumbotron jumbotron-fluid ">
     <div class="row container">
-      <div class="col-9">
+      <div class="col-sm-9">
         <h1 class="display-4">Game Recommender System</h1>
         <p class="lead">Please mark your favourite games</p>
         {% load static %}
       </div>
-        <div class="col-3">
+        <div class="col-sm-2">
           <img src="{% static "heroku_url.png" %}" height="200px" width="200px" alt="" />
         </div>
     </div>
@@ -65,14 +65,17 @@
 <div class="container">
     <form action='/index/' method='POST' class="form-inline my-2 my-lg-2">
       {% csrf_token %}
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Collaborative-Filtering' onclick="showMask();"/>
-      <input class="form-control mr-sm-2 btn btn-dark" type="submit" name='method' value='Content-Based' onclick="showMask();"/>
+      <input class="form-control mr-md-2 btn btn-dark" type="submit" name='method' value='Collaborative-Filtering' onclick="showMask();"/>
+      <br></br>
+      <input class="form-control mr-md-2 btn btn-dark" type="submit" name='method' value='Content-Based' onclick="showMask();"/>
       <input type="hidden" name="currentMethod" value="{{ rsMethod }}" />
-      <input class="form-control mr-sm-2 btn btn-danger" type="submit" name='clear' value='Clear' onclick="showMask();"/>
+      <br></br>
+      <input class="form-control mr-md-2 btn btn-danger" type="submit" name='clear' value='Clear' onclick="showMask();"/>
+      <br></br>
     </form>
 </div>
 <div class="container">
-  <div class="row col-md-12">
+  <div class="row">
     {% for game in gameList %}
     <div class="card col-md-3">
       <img src="{{ game.image }}" class="card-img-top img-fluid" alt="" />
