@@ -53,7 +53,6 @@ def index(request):
             elif rs == 2:
                 gameName = request.POST['name']
                 gameScore = int(request.POST['score'])
-                print(gameScore)
                 if not 'scoredGames' in request.session or not request.session['scoredGames']:
                     tmpDict = {gameName: gameScore}
                     request.session['scoredGames'] = tmpDict
@@ -64,8 +63,10 @@ def index(request):
                         request.session['scoredGames'] = tmpDict
                 gameList = cf.getRecommenderDict(
                     request.session['scoredGames'])
+                for game in gameList:
+                    print(game['name']+str(game['predictedScore']))
                 rsMethod = 2
-                # print(request.session['scoredGames'])
+                print(request.session['scoredGames'])
         elif 'method' in request.POST:
             if request.POST['method'] == 'Content-Based':
                 request.session['favoriteGames'] = []

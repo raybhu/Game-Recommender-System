@@ -19,6 +19,15 @@
             
         }
 </script>
+
+<script>
+    function test(gameName){
+      console.log(gameName);
+      score = document.getElementById(gameName).value;
+   
+      document.getElementById("s"+gameName).innerHTML=score;
+    }
+</script>
 {% endblock %}
 {% block content %}
 <div class="modal fade" id="loadingModal">
@@ -65,22 +74,25 @@
           {% elif rsMethod == 2%}
           <input type="hidden" name="method" value="{{ rsMethod }}" />
           <input type="hidden" name="name" value="{{ game.name }}" />
+          {% if game.predictedScore %}
           <div class="row col-16" align="center" >
-            <input type="range" name="score" id="range" min="0" max="100" step="1" value="0" class="col-9" onchange="test()"/>
-            <p id="score" class="col-3">0</p>
+  
+            <input type="range" name="score" id="{{game.name}}" min="0" max="100" step="1" value="{{game.predictedScore}}" class="col-9" onchange="test(this.id)"/>
+            <p id="s{{game.name}}" class="col-3">{{game.predictedScore}}</p>
           </div>
-          <script>
-            function test(){
-              score = document.getElementById("range").value;
-              document.getElementById("score").innerHTML=score;
-            }
-          </script>
+          {% else %}
+          <div class="row col-16" align="center" >
+            <input type="range" name="score" id="{{game.name}}" min="0" max="100" step="1" value="0" class="col-9" onchange="test(this.id)"/>
+            <p id="s{{game.name}}" class="col-3">0</p>
+          </div>
+          {% endif %}
           <input type="submit" value=✔︎ class="btn btn-danger col-12" onclick="showMask();"/>
           {% endif %}
         </form>
       </div>
     </div>
     {% endfor %}
+    
   </div>
 </div>
 
