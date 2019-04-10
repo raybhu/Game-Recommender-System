@@ -12,6 +12,7 @@ def findKSimilarCritic(userRowNumber, scoreMatrix, rowNames, metric='cosine', k=
     indices = []
     model_knn = NearestNeighbors(metric=metric, algorithm='auto')
     model_knn.fit(scoreMatrix)
+
     distances, indices = model_knn.kneighbors(
         scoreMatrix.iloc[userRowNumber-1, :].values.reshape(1, -1), n_neighbors=k)
     similarities = 1-distances.flatten()
@@ -19,9 +20,9 @@ def findKSimilarCritic(userRowNumber, scoreMatrix, rowNames, metric='cosine', k=
     for i in range(0, len(indices.flatten())):
         if indices.flatten()[i]+1 == userRowNumber:
             continue
-        # else:
-        #     print('{0}: {1}, with similarity of {2}'.format(
-        #         i, rowNames[indices.flatten()[i]], similarities.flatten()[i]))
+        else:
+            print('{0}: {1}, with similarity of {2}'.format(
+                i, rowNames[indices.flatten()[i]], similarities.flatten()[i]))
     return similarities, indices
 
 
@@ -31,6 +32,7 @@ def predict_userbased(userRowNumber, gameColumnNumber, scoreMatrix, rowNames, co
         userRowNumber, scoreMatrix, rowNames)
     # similar users based on cosine similarity
     mean_rating = scoreMatrix.loc[userRowNumber-1, :].mean()
+
     # to adjust for zero based indexing
     sum_wt = np.sum(similarities)-1
     product = 1
@@ -40,6 +42,8 @@ def predict_userbased(userRowNumber, gameColumnNumber, scoreMatrix, rowNames, co
         if indices.flatten()[i]+1 == userRowNumber:
             continue
         else:
+            print(scoreMatrix.iloc[indices.flatten()[
+                i], gameColumnNumber-1])
             ratings_diff = scoreMatrix.iloc[indices.flatten()[
                 i], gameColumnNumber-1]-np.mean(scoreMatrix.iloc[indices.flatten()[i], :])
             product = ratings_diff * (similarities[i])
@@ -96,7 +100,7 @@ def getRecommenderDict(favoriteGamesDict):
             rowNames = scoreMatrix.index.values
             userRowNumber = len(scoreMatrix.index)
             scoreMatrix = pd.DataFrame(scoreMatrix.values)
-            # print(scoreMatrix, scoreMatrix.values, userRowNumber)
+            print(scoreMatrix, scoreMatrix.values, userRowNumber)
 
             gameList[index]['predictedScore'] = int(predict_userbased(
                 userRowNumber, len(testDict), scoreMatrix, rowNames, columnNames))
@@ -113,9 +117,9 @@ def getRecommenderDict(favoriteGamesDict):
     return gameList
 
 
-# favoriteGamesDict = {'FIFA 18': 100, 'FIFA 17': 100,
-#                      "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
-# getRecommenderDict(favoriteGamesDict)
+favoriteGamesDict = {'FIFA 18': 100, 'FIFA 17': 100,
+                     "FIFA 14": 100, 'Pro Evolution Soccer 2016': 90}
+getRecommenderDict(favoriteGamesDict)
 # t1 = threading.Thread(target=getRecommenderDict, args=(favoriteGamesDict,))
 # t1.start()
 # t1.join()
