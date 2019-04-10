@@ -19,9 +19,9 @@ def findKSimilarCritic(userRowNumber, scoreMatrix, rowNames, metric='cosine', k=
     for i in range(0, len(indices.flatten())):
         if indices.flatten()[i]+1 == userRowNumber:
             continue
-        else:
-            print('{0}: {1}, with similarity of {2}'.format(
-                i, rowNames[indices.flatten()[i]], similarities.flatten()[i]))
+        # else:
+        #     print('{0}: {1}, with similarity of {2}'.format(
+        #         i, rowNames[indices.flatten()[i]], similarities.flatten()[i]))
     return similarities, indices
 
 
@@ -46,8 +46,8 @@ def predict_userbased(userRowNumber, gameColumnNumber, scoreMatrix, rowNames, co
             wtd_sum = wtd_sum + product
 
     prediction = int(round(mean_rating + (wtd_sum/sum_wt)))
-    print(
-        '\nPredicted rating for user at {0} row -> game {1}: {2}'.format(userRowNumber, columnNames[gameColumnNumber-1], prediction))
+    # print(
+    #     '\nPredicted rating for user at {0} row -> game {1}: {2}'.format(userRowNumber, columnNames[gameColumnNumber-1], prediction))
 
     return prediction
 
@@ -98,9 +98,14 @@ def getRecommenderDict(favoriteGamesDict):
             scoreMatrix = pd.DataFrame(scoreMatrix.values)
             # print(scoreMatrix, scoreMatrix.values, userRowNumber)
 
-            gameList[index]['predictedScore'] = predict_userbased(
-                userRowNumber, len(testDict), scoreMatrix, rowNames, columnNames)
+            gameList[index]['predictedScore'] = int(predict_userbased(
+                userRowNumber, len(testDict), scoreMatrix, rowNames, columnNames))
+        # else:
+        #     gameList.remove(game)
 
+    gameList = list(filter(lambda e: 'predictedScore' in e.keys(), gameList))
+    gameList = sorted(
+        gameList, key=lambda e: e['predictedScore'], reverse=True)
     with open(predictResultJSONFile, 'w') as f:
         f.write(json.dumps(gameList))
         print('The predict result has saved in '+predictResultJSONFile)
