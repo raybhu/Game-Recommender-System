@@ -10,7 +10,7 @@ def findKSimilarCritic(userRowNumber, scoreMatrix, rowNames, metric='cosine', k=
     # find k similar users
     similarities = []
     indices = []
-    model_knn = NearestNeighbors(metric=metric, algorithm='auto')
+    model_knn = NearestNeighbors(metric=metric, algorithm='brute')
     model_knn.fit(scoreMatrix)
 
     distances, indices = model_knn.kneighbors(
